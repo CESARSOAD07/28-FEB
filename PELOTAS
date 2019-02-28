@@ -5,6 +5,7 @@ function setup() {
 	createCanvas(400, 400);
 	p1 = new Ball();
 	p2 = new Ball();
+	p3 = new Ball();
 }
 
 function draw() {
@@ -32,6 +33,8 @@ function draw() {
 
 		p2.botarY();
 	}
+	
+
 
 }
 class Ball {
@@ -43,7 +46,6 @@ class Ball {
 		this.vely = 10;
 	}
 	mostrar() {
-		fill(random(255),random(255),random(255));
 		ellipse(this.x, this.y, this.tam, this.tam);
 	}
 
@@ -76,9 +78,11 @@ class Ball {
 	}
 
 	botarX() {
+		fill(random(255),random(255),random(255));
 		this.velx = this.velx * -1
 	}
 	botarY() {
+		fill(random(255),random(255),random(255));
 		this.vely = this.vely * -1
 	}
 }
